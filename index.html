@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>El Rincón de Su · Cocina hispanoamericana en Miraflores de la Sierra</title>
+<meta name="description" content="El Rincón de Su: tacos, nachos, guacamole hecho en la mesa, hamburguesas con carne de Casa Gutier y cocina casera en la Plaza de España de Miraflores de la Sierra. Carta, horario, reservas y pedidos para llevar por WhatsApp.">
+<meta name="theme-color" content="#2f3a1f">
+<meta property="og:title" content="El Rincón de Su · Miraflores de la Sierra">
+<meta property="og:description" content="Cocina hispanoamericana con un toque único, en la Plaza de España de Miraflores.">
+<meta property="og:image" content="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RwS8BFQv3H2OofXvGH8Y6WprQQ8PdiDB7UT07u8Y7QjwVOUaK50fNtNwAT5w7nJYHSbL1Wjd0Po6HhhJ0uUElXUjTLSW_jKxXDUnBzn5gyaD4fTYkxoVfmO-nsofpNdTTHEPG5OkXPuJE=w1200-h630-k-no">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"El Rincón de Su","servesCuisine":["Hispanoamericana","Mexicana","Española"],"telephone":"+34634719318","priceRange":"10-20 €","address":{"@type":"PostalAddress","streetAddress":"C. de la Fuente, 1","postalCode":"28792","addressLocality":"Miraflores de la Sierra","addressRegion":"Madrid","addressCountry":"ES"},"geo":{"@type":"GeoCoordinates","latitude":40.8136894,"longitude":-3.7663235},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","reviewCount":"260"},"sameAs":["https://www.instagram.com/el_rincondesu/"]}
+</script>
+<style>
+:root{
+  --verde:#2f3a1f; --oliva:#6b7a2c; --oliva-2:#8a9a3b; --chile:#c4422b; --chile-2:#e0603f;
+  --maiz:#f2b632; --papel:#f7f0e3; --papel-2:#efe4cf; --tinta:#221d16; --gris:#6d6458;
+  --r:22px; --sombra:0 18px 40px -18px rgba(34,29,22,.45);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{font-family:"DM Sans",system-ui,sans-serif;color:var(--tinta);background:var(--papel);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+.wrap{width:min(1180px,92vw);margin:0 auto}
+.script{font-family:"Caveat",cursive;font-weight:700}
+h1,h2,h3{font-family:"Fraunces",serif;line-height:1.02;letter-spacing:-.02em}
+h2{font-size:clamp(2.2rem,5.5vw,4rem);font-weight:900}
+.kicker{font-family:"Caveat",cursive;font-size:1.7rem;color:var(--chile);display:block;margin-bottom:.2rem;transform:rotate(-2deg);transform-origin:left}
+section{padding:clamp(70px,10vw,130px) 0;position:relative}
+.grain:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.35;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 .2 0 0 0 0 .15 0 0 0 0 .1 0 0 0 .18 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* ---------- NAV ---------- */
+.nav{position:fixed;inset:0 0 auto;z-index:50;transition:background .35s,box-shadow .35s,padding .35s;padding:18px 0}
+.nav.solid{background:rgba(247,240,227,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(34,29,22,.08);padding:10px 0}
+.nav .wrap{display:flex;align-items:center;gap:20px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;transition:color .35s}
+.nav.solid .logo{color:var(--tinta)}
+.logo svg{width:42px;height:42px;flex:none}
+.logo b{font-family:"Caveat",cursive;font-size:1.9rem;line-height:1}
+.nav ul{display:flex;gap:26px;list-style:none;margin-left:auto}
+.nav ul a{text-decoration:none;color:#fff;font-weight:500;font-size:.95rem;opacity:.9;transition:color .35s}
+.nav.solid ul a{color:var(--tinta)}
+.nav ul a:hover{color:var(--maiz)}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:13px 22px;border-radius:999px;font-weight:700;text-decoration:none;transition:transform .2s,box-shadow .2s,background .2s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn-chile{background:var(--chile);color:#fff;box-shadow:0 10px 24px -10px var(--chile)}
+.btn-chile:hover{background:var(--chile-2)}
+.btn-ghost{border:2px solid rgba(255,255,255,.7);color:#fff}
+.btn-ghost:hover{background:#fff;color:var(--tinta)}
+.btn-verde{background:var(--verde);color:var(--papel)}
+.btn svg{width:18px;height:18px}
+.nav .btn{padding:10px 18px;font-size:.92rem}
+/* mobile section dropdown */
+.mnav{display:none}
+@media (max-width:900px){
+  .nav ul,.nav .btn{display:none}
+  .mnav{display:block;margin-left:auto;position:relative}
+  .mnav button{display:flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;background:rgba(255,255,255,.18);color:#fff;font-weight:700;backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.35)}
+  .nav.solid .mnav button{background:var(--verde);color:var(--papel);border-color:var(--verde)}
+  .mnav button i{display:block;width:16px;height:2px;background:currentColor;position:relative;transition:.3s}
+  .mnav button i:before,.mnav button i:after{content:"";position:absolute;left:0;width:16px;height:2px;background:currentColor;transition:.3s}
+  .mnav button i:before{top:-5px}.mnav button i:after{top:5px}
+  .mnav.open button i{background:transparent}
+  .mnav.open button i:before{top:0;transform:rotate(45deg)}
+  .mnav.open button i:after{top:0;transform:rotate(-45deg)}
+  .mnav .drop{position:absolute;right:0;top:calc(100% + 10px);background:var(--papel);border-radius:18px;box-shadow:var(--sombra);padding:8px;min-width:230px;opacity:0;transform:translateY(-8px) scale(.97);pointer-events:none;transition:.25s;transform-origin:top right}
+  .mnav.open .drop{opacity:1;transform:none;pointer-events:auto}
+  .mnav .drop a{display:flex;justify-content:space-between;padding:12px 14px;border-radius:12px;text-decoration:none;font-weight:600;color:var(--tinta)}
+  .mnav .drop a.on,.mnav .drop a:hover{background:var(--papel-2);color:var(--chile)}
+  .mnav .drop a span{font-family:"Caveat";font-size:1.2rem;color:var(--gris)}
+}
+
+/* ---------- HERO ---------- */
+.hero{min-height:100svh;display:flex;align-items:flex-end;color:#fff;padding:0 0 clamp(40px,7vw,90px);overflow:hidden;background:var(--verde)}
+.hero .slides{position:absolute;inset:0}
+.hero .slides img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.12);transition:opacity 1.6s ease,transform 7s ease}
+.hero .slides img.on{opacity:1;transform:scale(1)}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,24,12,.55) 0%,rgba(20,24,12,.1) 35%,rgba(20,24,12,.85) 100%)}
+.hero .wrap{position:relative;z-index:2}
+.estado{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);backdrop-filter:blur(8px);padding:8px 16px 8px 12px;border-radius:999px;font-weight:600;font-size:.92rem;margin-bottom:22px}
+.estado i{width:10px;height:10px;border-radius:50%;background:#7bd389;box-shadow:0 0 0 0 rgba(123,211,137,.7);animation:pulso 2s infinite}
+.estado.cerrado i{background:#f08a6b;animation:none}
+@keyframes pulso{70%{box-shadow:0 0 0 12px rgba(123,211,137,0)}100%{box-shadow:0 0 0 0 rgba(123,211,137,0)}}
+.hero h1{font-size:clamp(3.2rem,11vw,9rem);font-weight:900;max-width:11ch}
+.hero h1 em{font-family:"Caveat",cursive;font-style:normal;font-weight:700;color:var(--maiz);display:inline-block;transform:rotate(-4deg);font-size:1.05em;letter-spacing:0}
+.hero p.lead{font-size:clamp(1.05rem,2vw,1.35rem);max-width:46ch;margin:22px 0 30px;opacity:.95}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap}
+.hero .meta{display:flex;gap:28px;flex-wrap:wrap;margin-top:44px;font-size:.92rem;opacity:.92}
+.hero .meta b{display:block;font-family:"Fraunces";font-size:1.7rem;line-height:1.1}
+.stars{color:var(--maiz);letter-spacing:2px}
+.dots{position:absolute;right:4vw;bottom:clamp(40px,7vw,90px);z-index:3;display:flex;flex-direction:column;gap:8px}
+.dots button{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.4);transition:.3s}
+.dots button.on{background:#fff;height:26px;border-radius:9px}
+@media(max-width:700px){.dots{display:none}}
+
+/* ---------- MARQUEE ---------- */
+.marquee{background:var(--chile);color:#fff;overflow:hidden;padding:16px 0;transform:rotate(-1.2deg);margin:-14px -2vw 0;position:relative;z-index:4;box-shadow:0 10px 30px -15px rgba(0,0,0,.4)}
+.marquee .track{display:flex;gap:46px;width:max-content;animation:mq 30s linear infinite;font-family:"Fraunces";font-weight:700;font-size:1.35rem;text-transform:uppercase;letter-spacing:.02em}
+.marquee span{display:flex;align-items:center;gap:46px}
+.marquee span:after{content:"✺";color:var(--maiz)}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* ---------- HISTORIA ---------- */
+.intro .grid{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(30px,6vw,90px);align-items:center}
+.intro p{font-size:1.12rem;color:#40382d;margin-top:20px;max-width:52ch}
+.intro .firma{font-family:"Caveat";font-size:2.4rem;color:var(--chile);margin-top:18px}
+.collage{position:relative;aspect-ratio:1/1.05}
+.collage img{position:absolute;object-fit:cover;border-radius:var(--r);box-shadow:var(--sombra);border:6px solid #fff}
+.collage .a{width:64%;height:70%;left:0;top:0;transform:rotate(-3deg)}
+.collage .b{width:52%;height:52%;right:0;top:12%;transform:rotate(4deg)}
+.collage .c{width:50%;height:42%;left:22%;bottom:0;transform:rotate(-1deg)}
+.sello{position:absolute;right:2%;bottom:6%;width:128px;height:128px;border-radius:50%;background:var(--maiz);display:grid;place-items:center;text-align:center;font-family:"Caveat";font-size:1.25rem;line-height:1.05;color:var(--tinta);transform:rotate(12deg);box-shadow:var(--sombra);z-index:2}
+.sello svg{position:absolute;inset:0;animation:gira 18s linear infinite}
+@keyframes gira{to{transform:rotate(360deg)}}
+.datos{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:34px}
+.datos div{background:#fff;border-radius:16px;padding:16px;box-shadow:0 6px 20px -14px rgba(0,0,0,.4)}
+.datos b{font-family:"Fraunces";font-size:1.6rem;display:block;color:var(--verde)}
+.datos small{color:var(--gris);font-size:.82rem}
+@media(max-width:900px){.intro .grid{grid-template-columns:1fr}.collage{max-width:520px;margin:0 auto;width:100%}}
+
+/* ---------- QUÉ ME PIDO ---------- */
+.antojo{background:var(--verde);color:var(--papel);overflow:hidden}
+.antojo .kicker{color:var(--maiz)}
+.antojo .head{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap}
+.antojo .head p{max-width:42ch;opacity:.85}
+.panel{display:grid;grid-template-columns:1fr 1.15fr;gap:28px;margin-top:44px}
+.pasos{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--r);padding:26px}
+.pasos h3{font-family:"DM Sans";font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;opacity:.7;margin:0 0 12px}
+.pasos h3:not(:first-child){margin-top:26px}
+.chips{display:flex;flex-wrap:wrap;gap:9px}
+.chip{padding:10px 16px;border-radius:999px;border:1.5px solid rgba(247,240,227,.35);font-weight:600;font-size:.95rem;transition:.2s}
+.chip:hover{border-color:var(--maiz)}
+.chip.on{background:var(--maiz);color:var(--tinta);border-color:var(--maiz)}
+.contador{display:flex;align-items:center;gap:16px}
+.contador button{width:44px;height:44px;border-radius:50%;border:1.5px solid rgba(247,240,227,.4);font-size:1.4rem;font-weight:700}
+.contador button:hover{background:var(--papel);color:var(--verde)}
+.contador output{font-family:"Fraunces";font-size:2.4rem;min-width:2ch;text-align:center}
+.resultado{background:var(--papel);color:var(--tinta);border-radius:var(--r);padding:26px;position:relative;min-height:100%}
+.resultado .tit{display:flex;justify-content:space-between;align-items:baseline;gap:10px;border-bottom:2px dashed var(--papel-2);padding-bottom:12px;margin-bottom:6px}
+.resultado .tit b{font-family:"Caveat";font-size:2rem;color:var(--chile)}
+.resultado ul{list-style:none}
+.resultado li{display:flex;gap:14px;align-items:center;padding:12px 0;border-bottom:1px solid var(--papel-2);animation:entra .45s both}
+.resultado li img{width:58px;height:58px;border-radius:14px;object-fit:cover;flex:none;background:var(--papel-2)}
+.resultado li .ph{width:58px;height:58px;border-radius:14px;flex:none;display:grid;place-items:center;background:var(--papel-2);font-size:1.6rem}
+.resultado li div{flex:1}
+.resultado li small{display:block;color:var(--gris);font-size:.84rem;line-height:1.35}
+.resultado li em{font-style:normal;font-weight:700;white-space:nowrap}
+.resultado .total{display:flex;justify-content:space-between;align-items:center;margin-top:16px;gap:12px;flex-wrap:wrap}
+.resultado .total span{font-family:"Fraunces";font-size:1.5rem}
+.resultado .total small{display:block;font-family:"DM Sans";font-size:.85rem;color:var(--gris)}
+@keyframes entra{from{opacity:0;transform:translateY(10px)}}
+@media(max-width:900px){.panel{grid-template-columns:1fr}}
+
+/* ---------- CARTA ---------- */
+.carta .head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:30px}
+.buscador{display:flex;align-items:center;gap:10px;background:#fff;border-radius:999px;padding:12px 18px;box-shadow:0 6px 20px -14px rgba(0,0,0,.5);min-width:min(340px,100%)}
+.buscador input{border:0;outline:0;font:inherit;background:none;flex:1;min-width:0}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding:4px 0 14px;scrollbar-width:none;position:sticky;top:64px;z-index:5;background:var(--papel)}
+.tabs::-webkit-scrollbar{display:none}
+.tab{padding:11px 18px;border-radius:999px;background:#fff;font-weight:700;white-space:nowrap;font-size:.95rem;box-shadow:0 4px 14px -10px rgba(0,0,0,.5);transition:.2s}
+.tab.on{background:var(--tinta);color:var(--papel)}
+.platos{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:16px}
+.plato{background:#fff;border-radius:20px;padding:20px;display:flex;flex-direction:column;gap:8px;position:relative;transition:transform .25s,box-shadow .25s;animation:entra .4s both}
+.plato:hover{transform:translateY(-4px);box-shadow:var(--sombra)}
+.plato.foto{padding:0;overflow:hidden}
+.plato.foto .img{aspect-ratio:16/10;overflow:hidden;position:relative}
+.plato.foto .img img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.plato.foto:hover .img img{transform:scale(1.06)}
+.plato.foto .txt{padding:18px 20px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
+.plato .top{display:flex;justify-content:space-between;gap:12px;align-items:baseline}
+.plato h4{font-family:"Fraunces";font-size:1.22rem;font-weight:700;line-height:1.15}
+.plato .precio{font-weight:700;color:var(--chile);white-space:nowrap;font-size:1.05rem}
+.plato p{color:var(--gris);font-size:.93rem;line-height:1.45;flex:1}
+.plato .add{align-self:flex-start;display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:.88rem;padding:8px 14px;border-radius:999px;background:var(--papel);transition:.2s;margin-top:4px}
+.plato .add:hover{background:var(--verde);color:var(--papel)}
+.plato .add.in{background:var(--oliva);color:#fff}
+.tag{position:absolute;top:14px;left:14px;background:var(--maiz);color:var(--tinta);font-family:"Caveat";font-size:1.15rem;font-weight:700;padding:2px 12px;border-radius:999px;z-index:2;transform:rotate(-3deg)}
+.plato:not(.foto) .tag{position:static;align-self:flex-start;margin-bottom:2px}
+.nota{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap}
+.nota span{background:var(--papel-2);padding:10px 16px;border-radius:14px;font-size:.92rem}
+.vacio{padding:40px;text-align:center;color:var(--gris);grid-column:1/-1}
+
+/* ---------- GUACAMOLE ---------- */
+.guaca{background:var(--oliva);color:#fff;overflow:hidden}
+.guaca .grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,80px);align-items:center}
+.guaca .kicker{color:var(--maiz)}
+.guaca p{font-size:1.1rem;opacity:.95;margin:18px 0 26px;max-width:46ch}
+.guaca .foto{border-radius:50%;aspect-ratio:1;overflow:hidden;border:10px solid rgba(255,255,255,.18);box-shadow:var(--sombra);position:relative}
+.guaca .foto img{width:100%;height:100%;object-fit:cover;animation:gira 80s linear infinite}
+.ingredientes{display:flex;flex-wrap:wrap;gap:10px}
+.ingredientes span{background:rgba(255,255,255,.14);padding:8px 14px;border-radius:999px;font-weight:600;font-size:.92rem;opacity:0;transform:translateY(10px);transition:.5s}
+.guaca.visto .ingredientes span{opacity:1;transform:none}
+@media(max-width:900px){.guaca .grid{grid-template-columns:1fr}.guaca .foto{max-width:380px;margin:0 auto;width:100%}}
+
+/* ---------- GALERÍA ---------- */
+.galeria{padding-bottom:40px}
+.mosaico{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:210px;gap:12px;margin-top:36px}
+.mosaico button{border-radius:18px;overflow:hidden;position:relative}
+.mosaico img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.mosaico button:hover img{transform:scale(1.07)}
+.mosaico .g{grid-row:span 2}
+.mosaico .w{grid-column:span 2}
+@media(max-width:800px){.mosaico{grid-template-columns:repeat(2,1fr);grid-auto-rows:160px}}
+.lightbox{position:fixed;inset:0;background:rgba(15,13,10,.94);z-index:100;display:none;align-items:center;justify-content:center;padding:4vw}
+.lightbox.on{display:flex}
+.lightbox img{max-height:86vh;max-width:92vw;border-radius:14px;object-fit:contain}
+.lightbox button{position:absolute;color:#fff;font-size:2.4rem;width:56px;height:56px;border-radius:50%;background:rgba(255,255,255,.1)}
+.lightbox .x{top:20px;right:20px;font-size:1.8rem}
+.lightbox .prev{left:16px}.lightbox .next{right:16px}
+
+/* ---------- RESEÑAS ---------- */
+.resenas{background:var(--papel-2)}
+.nota-google{display:flex;align-items:center;gap:22px;flex-wrap:wrap;margin-top:24px}
+.nota-google .num{font-family:"Fraunces";font-size:5rem;font-weight:900;line-height:.9;color:var(--verde)}
+.nota-google .stars{font-size:1.5rem}
+.carrusel{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:36px 4vw 20px;margin:0 -4vw;scrollbar-width:none}
+.carrusel::-webkit-scrollbar{display:none}
+.res{flex:0 0 min(380px,84vw);scroll-snap-align:center;background:#fff;border-radius:var(--r);padding:28px;box-shadow:0 10px 30px -20px rgba(0,0,0,.5);display:flex;flex-direction:column;gap:14px;position:relative}
+.res:before{content:"“";position:absolute;top:-6px;right:20px;font-family:"Fraunces";font-size:6rem;color:var(--papel-2);line-height:1}
+.res p{font-size:1.02rem;flex:1}
+.res footer{display:flex;align-items:center;gap:12px}
+.res .av{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font-weight:700;color:#fff}
+.res small{color:var(--gris);display:block}
+.flechas{display:flex;gap:10px}
+.flechas button{width:48px;height:48px;border-radius:50%;background:#fff;font-size:1.3rem;box-shadow:0 6px 18px -12px rgba(0,0,0,.5)}
+.flechas button:hover{background:var(--tinta);color:#fff}
+
+/* ---------- RESERVA ---------- */
+.reserva .grid{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(30px,5vw,70px);align-items:start}
+.form{background:#fff;border-radius:var(--r);padding:clamp(22px,4vw,36px);box-shadow:var(--sombra)}
+.form label{display:block;font-weight:700;font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;color:var(--gris);margin:18px 0 8px}
+.form label:first-child{margin-top:0}
+.form input,.form select,.form textarea{width:100%;font:inherit;padding:14px 16px;border-radius:14px;border:1.5px solid var(--papel-2);background:var(--papel);outline:none;transition:border .2s}
+.form input:focus,.form select:focus,.form textarea:focus{border-color:var(--oliva)}
+.form .fila{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.form .btn{width:100%;justify-content:center;margin-top:22px;padding:16px}
+.form .aviso{font-size:.85rem;color:var(--gris);margin-top:12px;text-align:center}
+.grupos{margin-top:26px;display:grid;gap:12px}
+.grupos div{display:flex;gap:14px;align-items:flex-start;background:#fff;padding:16px 18px;border-radius:16px}
+.grupos div span{font-size:1.6rem}
+.grupos b{display:block}
+.grupos small{color:var(--gris)}
+@media(max-width:900px){.reserva .grid{grid-template-columns:1fr}}
+
+/* ---------- VISITA ---------- */
+.visita{background:var(--tinta);color:var(--papel)}
+.visita .kicker{color:var(--maiz)}
+.visita .grid{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(30px,5vw,70px)}
+.horario{margin-top:26px;border-top:1px solid rgba(247,240,227,.15)}
+.horario div{display:flex;justify-content:space-between;padding:13px 4px;border-bottom:1px solid rgba(247,240,227,.15);gap:14px}
+.horario div.hoy{color:var(--maiz);font-weight:700}
+.horario div.hoy span:first-child:after{content:" · hoy";font-family:"Caveat";font-size:1.2rem}
+.donde{margin-top:30px;padding:20px;border-radius:18px;background:rgba(247,240,227,.07);border:1px dashed rgba(247,240,227,.25)}
+.donde b{font-family:"Caveat";font-size:1.6rem;color:var(--maiz);display:block}
+.mapa{border-radius:var(--r);overflow:hidden;min-height:420px;position:relative;background:#333}
+.mapa iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(.3) contrast(1.05)}
+.mapa .over{position:absolute;left:16px;bottom:16px;right:16px;display:flex;gap:10px;flex-wrap:wrap}
+@media(max-width:900px){.visita .grid{grid-template-columns:1fr}}
+
+/* ---------- FOOTER ---------- */
+footer.pie{background:#17140f;color:rgba(247,240,227,.7);padding:50px 0 120px;font-size:.92rem}
+footer.pie .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
+footer.pie .logo{color:var(--papel)}
+footer.pie a{color:var(--papel)}
+.lace{font-size:.82rem;opacity:.6}
+
+/* ---------- BOLSA (pedido para llevar) ---------- */
+.bolsa-btn{position:fixed;right:18px;bottom:18px;z-index:60;display:flex;align-items:center;gap:10px;background:var(--verde);color:var(--papel);padding:14px 20px;border-radius:999px;font-weight:700;box-shadow:0 14px 30px -10px rgba(0,0,0,.5);transform:translateY(140%);transition:transform .4s cubic-bezier(.2,1.4,.4,1)}
+.bolsa-btn.on{transform:none}
+.bolsa-btn b{background:var(--maiz);color:var(--tinta);border-radius:999px;min-width:26px;height:26px;display:grid;place-items:center;font-size:.85rem;padding:0 6px}
+.bolsa-btn.bump{animation:bump .4s}
+@keyframes bump{50%{transform:scale(1.12)}}
+.bolsa{position:fixed;inset:auto 0 0 auto;width:min(420px,100vw);height:min(640px,88svh);background:var(--papel);z-index:90;border-radius:24px 24px 0 0;box-shadow:0 -10px 50px rgba(0,0,0,.35);transform:translateY(105%);transition:transform .45s cubic-bezier(.2,.9,.3,1);display:flex;flex-direction:column;right:0}
+@media(min-width:700px){.bolsa{right:18px;bottom:18px;border-radius:24px}}
+.bolsa.on{transform:none}
+.bolsa header{padding:22px 22px 12px;display:flex;justify-content:space-between;align-items:center}
+.bolsa header h3{font-size:1.6rem}
+.bolsa header button{font-size:1.6rem;width:40px;height:40px;border-radius:50%;background:#fff}
+.bolsa .items{flex:1;overflow:auto;padding:0 22px}
+.bolsa .it{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--papel-2)}
+.bolsa .it div{flex:1}
+.bolsa .it small{color:var(--gris)}
+.bolsa .q{display:flex;align-items:center;gap:8px}
+.bolsa .q button{width:30px;height:30px;border-radius:50%;background:#fff;font-weight:700}
+.bolsa .pie-bolsa{padding:16px 22px 22px;border-top:2px dashed var(--papel-2)}
+.bolsa .pie-bolsa .tot{display:flex;justify-content:space-between;font-family:"Fraunces";font-size:1.4rem;margin-bottom:12px}
+.bolsa input{width:100%;font:inherit;padding:12px 14px;border-radius:12px;border:1.5px solid var(--papel-2);margin-bottom:10px;background:#fff}
+.bolsa .btn{width:100%;justify-content:center;padding:15px}
+.velo{position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:80;opacity:0;pointer-events:none;transition:.3s}
+.velo.on{opacity:1;pointer-events:auto}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<nav class="nav" id="nav">
+  <div class="wrap">
+    <a href="#inicio" class="logo" aria-label="El Rincón de Su, inicio">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#c4422b"/><path d="M14 36c0-10 8-18 18-18s18 8 18 18" fill="none" stroke="#f2b632" stroke-width="4" stroke-linecap="round"/><path d="M12 36h40c-2 9-10 14-20 14S14 45 12 36z" fill="#f7f0e3"/><circle cx="24" cy="31" r="3" fill="#8a9a3b"/><circle cx="32" cy="28" r="3" fill="#f2b632"/><circle cx="40" cy="31" r="3" fill="#8a9a3b"/></svg>
+      <b>El Rincón de Su</b>
+    </a>
+    <ul>
+      <li><a href="#rincon">El rincón</a></li>
+      <li><a href="#antojo">¿Qué me pido?</a></li>
+      <li><a href="#carta">Carta</a></li>
+      <li><a href="#resenas">Opiniones</a></li>
+      <li><a href="#visita">Horario</a></li>
+    </ul>
+    <a href="#reserva" class="btn btn-chile">Reservar mesa</a>
+    <div class="mnav" id="mnav">
+      <button aria-expanded="false" aria-controls="drop"><i></i><span id="mnav-label">Menú</span></button>
+      <div class="drop" id="drop">
+        <a href="#inicio">Inicio <span>hola</span></a>
+        <a href="#rincon">El rincón <span>quiénes</span></a>
+        <a href="#antojo">¿Qué me pido? <span>te ayudo</span></a>
+        <a href="#carta">Carta <span>precios</span></a>
+        <a href="#galeria">Fotos <span>mira</span></a>
+        <a href="#resenas">Opiniones <span>4,7 ★</span></a>
+        <a href="#reserva">Reservar <span>mesa</span></a>
+        <a href="#visita">Horario y mapa <span>ven</span></a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero" id="inicio">
+  <div class="slides" id="slides"></div>
+  <div class="wrap">
+    <div class="estado" id="estado"><i></i><span>Comprobando horario…</span></div>
+    <h1>Tacos, brasa y <em>cariño</em> en Miraflores</h1>
+    <p class="lead">Cocina hispanoamericana con un toque único, en los soportales de la Plaza de España, junto al Ayuntamiento.</p>
+    <div class="ctas">
+      <a href="#carta" class="btn btn-chile">Ver la carta
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a href="#reserva" class="btn btn-ghost">Reservar mesa</a>
+    </div>
+    <div class="meta">
+      <div><b>4,7 <span class="stars">★</span></b>260 reseñas en Google</div>
+      <div><b>10–20 €</b>por persona</div>
+      <div><b>Casa Gutier</b>todas nuestras carnes</div>
+    </div>
+  </div>
+  <div class="dots" id="dots"></div>
+</header>
+
+<div class="marquee" aria-hidden="true"><div class="track" id="mq"></div></div>
+
+<!-- ================= EL RINCÓN ================= -->
+<section class="intro grain" id="rincon">
+  <div class="wrap grid">
+    <div class="rv">
+      <span class="kicker">Bienvenidos a casa de Su</span>
+      <h2>Un rincón pequeño con mucho sabor</h2>
+      <p>Lo que sale de nuestra cocina mezcla dos mundos: los tacos, los nachos y el guacamole de allá, y la tortilla, la oreja y las croquetas de aquí. Raciones generosas, producto de calidad y un trato de los que te hacen sentir en casa.</p>
+      <p>Abrimos desde el desayuno, y en la terraza de la plaza se está de lujo. Si venís en grupo, avisad y os preparamos sitio.</p>
+      <div class="firma">— Su</div>
+      <div class="datos">
+        <div><b>Desayunos</b><small>desde las 8:30</small></div>
+        <div><b>Terraza</b><small>en la Plaza de España</small></div>
+        <div><b>Sin gluten</b><small>pan disponible</small></div>
+      </div>
+    </div>
+    <div class="collage rv">
+      <img class="a" data-img="27" alt="Tacos de Su" referrerpolicy="no-referrer" loading="lazy">
+      <img class="b" data-img="44" alt="Terraza de El Rincón de Su" referrerpolicy="no-referrer" loading="lazy">
+      <img class="c" data-img="33" alt="Ensalada de burrata" referrerpolicy="no-referrer" loading="lazy">
+      <div class="sello">
+        <svg viewBox="0 0 128 128"><defs><path id="circ" d="M64 64m-48 0a48 48 0 1 1 96 0a48 48 0 1 1-96 0"/></defs><text font-family="DM Sans" font-size="11" font-weight="700" letter-spacing="3" fill="#221d16"><textPath href="#circ">HECHO CON CARIÑO · MIRAFLORES · </textPath></text></svg>
+        <span>cocina<br>de aquí<br>y de allá</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ¿QUÉ ME PIDO? ================= -->
+<section class="antojo" id="antojo">
+  <div class="wrap">
+    <div class="head rv">
+      <div><span class="kicker">¿No sabes qué pedir?</span><h2>Dinos qué te apetece</h2></div>
+      <p>Elige tu antojo y cuántos sois, y te montamos una propuesta con platos de la carta. Si te convence, añádela al pedido o enséñasela al camarero.</p>
+    </div>
+    <div class="panel rv">
+      <div class="pasos">
+        <h3>1 · ¿Qué te pide el cuerpo?</h3>
+        <div class="chips" id="moods">
+          <button class="chip on" data-m="mexicano">🌮 Algo mexicano</button>
+          <button class="chip" data-m="picoteo">🧀 Picoteo para compartir</button>
+          <button class="chip" data-m="burger">🍔 Hamburguesa</button>
+          <button class="chip" data-m="plato">🥩 Plato contundente</button>
+          <button class="chip" data-m="verde">🥗 Algo ligero</button>
+        </div>
+        <h3>2 · ¿Cuántos sois?</h3>
+        <div class="contador"><button id="menos" aria-label="Menos personas">−</button><output id="pax">2</output><button id="mas" aria-label="Más personas">+</button><span style="opacity:.75">personas</span></div>
+        <h3>3 · ¿Con postre?</h3>
+        <div class="chips" id="postre">
+          <button class="chip on" data-p="1">Sí, por favor 🍰</button>
+          <button class="chip" data-p="0">Hoy no</button>
+        </div>
+      </div>
+      <div class="resultado" aria-live="polite">
+        <div class="tit"><span style="font-weight:700">Nuestra propuesta</span><b id="res-titulo">Fiesta mexicana</b></div>
+        <ul id="res-lista"></ul>
+        <div class="total">
+          <span id="res-total">0 €<small>aprox. 0 € por persona</small></span>
+          <button class="btn btn-chile" id="res-add">Añadir al pedido</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CARTA ================= -->
+<section class="carta" id="carta">
+  <div class="wrap">
+    <div class="head rv">
+      <div><span class="kicker">Lo que sale de la cocina</span><h2>La carta</h2></div>
+      <label class="buscador"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><input id="buscar" type="search" placeholder="Busca un plato: tacos, burrata, bacalao…" aria-label="Buscar en la carta"></label>
+    </div>
+    <div class="tabs" id="tabs" role="tablist"></div>
+    <div class="platos" id="platos"></div>
+    <div class="nota">
+      <span>🥩 Todas nuestras carnes son de <b>Casa Gutier</b></span>
+      <span>🌾 El pan de las hamburguesas puede ser <b>sin gluten</b></span>
+      <span>🛍️ Pulsa <b>+ Pedir</b> y te lo preparamos para llevar</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GUACAMOLE ================= -->
+<section class="guaca" id="guaca">
+  <div class="wrap grid">
+    <div class="foto rv"><img data-img="35" alt="Guacamole casero y tostadas" referrerpolicy="no-referrer" loading="lazy"></div>
+    <div class="rv">
+      <span class="kicker">El favorito de la casa</span>
+      <h2>Guacamole hecho en tu mesa</h2>
+      <p>Lo preparamos delante de ti, al momento, con aguacate maduro y todo lo que tiene que llevar. Pídelo para empezar y ya verás cómo vuela.</p>
+      <div class="ingredientes">
+        <span>🥑 Aguacate</span><span>🍅 Pico de gallo</span><span>🌶️ Salsa ranchera</span><span>🌿 Cilantro</span><span>🍋 Limón</span><span>🫒 Aceite</span><span>🧂 Sal y pimienta</span>
+      </div>
+      <div style="margin-top:28px;display:flex;gap:12px;flex-wrap:wrap">
+        <button class="btn btn-chile" data-add="Guacamole casero">+ Pedir guacamole · 18 €</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALERÍA ================= -->
+<section class="galeria" id="galeria">
+  <div class="wrap">
+    <div class="rv"><span class="kicker">Con hambre se ve mejor</span><h2>Así se come aquí</h2></div>
+    <div class="mosaico rv" id="mosaico"></div>
+  </div>
+</section>
+<div class="lightbox" id="lb" role="dialog" aria-modal="true" aria-label="Foto ampliada">
+  <button class="x" aria-label="Cerrar">×</button><button class="prev" aria-label="Anterior">‹</button>
+  <img alt=""><button class="next" aria-label="Siguiente">›</button>
+</div>
+
+<!-- ================= RESEÑAS ================= -->
+<section class="resenas" id="resenas">
+  <div class="wrap">
+    <div class="rv" style="display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap">
+      <div>
+        <span class="kicker">Lo dicen ellos, no nosotros</span>
+        <h2>Opiniones</h2>
+        <div class="nota-google"><div class="num">4,7</div><div><div class="stars">★★★★★</div><div>260 reseñas en Google</div></div></div>
+      </div>
+      <div class="flechas"><button id="r-prev" aria-label="Anterior">←</button><button id="r-next" aria-label="Siguiente">→</button></div>
+    </div>
+    <div class="carrusel" id="carrusel"></div>
+    <div class="rv" style="margin-top:14px;display:flex;gap:12px;flex-wrap:wrap">
+      <a class="btn btn-verde" target="_blank" rel="noopener" href="https://www.google.com/maps/place/?q=place_id:ChIJ5YihvTxjQQ0Rs-Nq6hPUzMY">Ver todas en Google</a>
+      <a class="btn" style="background:#fff" target="_blank" rel="noopener" href="https://search.google.com/local/writereview?placeid=ChIJ5YihvTxjQQ0Rs-Nq6hPUzMY">Déjanos tu reseña ★</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESERVA ================= -->
+<section class="reserva grain" id="reserva">
+  <div class="wrap grid">
+    <div class="rv">
+      <span class="kicker">Te guardamos sitio</span>
+      <h2>Reserva tu mesa</h2>
+      <p style="margin-top:18px;font-size:1.1rem;color:#40382d;max-width:44ch">Rellena los datos y te llega todo escrito a nuestro WhatsApp. Te contestamos para confirmar, sin llamadas ni esperas.</p>
+      <div class="grupos">
+        <div><span>👨‍👩‍👧‍👦</span><p><b>Grupos grandes</b><small>Comidas de amigos, cumpleaños o familia: avisad con tiempo y os preparamos la mesa.</small></p></div>
+        <div><span>🥚</span><p><b>Tortilla de patatas por encargo</b><small>Pídela al reservar y la tendrás recién hecha.</small></p></div>
+        <div><span>☀️</span><p><b>Terraza en la plaza</b><small>Dinos si preferís fuera y lo tenemos en cuenta.</small></p></div>
+      </div>
+    </div>
+    <form class="form rv" id="form-reserva">
+      <label for="f-nombre">Nombre</label>
+      <input id="f-nombre" required placeholder="¿A nombre de quién?">
+      <div class="fila">
+        <div><label for="f-dia">Día</label><input id="f-dia" type="date" required></div>
+        <div><label for="f-hora">Hora</label><select id="f-hora" required></select></div>
+      </div>
+      <div class="fila">
+        <div><label for="f-pax">Personas</label><input id="f-pax" type="number" min="1" max="40" value="2" required></div>
+        <div><label for="f-zona">Zona</label><select id="f-zona"><option>Me da igual</option><option>Terraza</option><option>Dentro</option></select></div>
+      </div>
+      <label for="f-nota">¿Algo más?</label>
+      <textarea id="f-nota" rows="3" placeholder="Alergias, trona, tortilla por encargo, celebración…"></textarea>
+      <button class="btn btn-chile" type="submit">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11 11 0 0 0 3.2 17.1L2 22l5-1.3A11 11 0 1 0 20.5 3.5zM12 20a8 8 0 0 1-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20zm4.4-6c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8 1c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.6.3 2.7 2.7 0 0 0-.8 2c0 1.2.9 2.3 1 2.5.1.1 1.7 2.6 4.1 3.6 1.5.7 2.1.7 2.9.6.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1l-.4-.4z"/></svg>
+        Enviar reserva por WhatsApp</button>
+      <p class="aviso" id="f-aviso">Te respondemos lo antes posible para confirmarla.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ================= VISITA ================= -->
+<section class="visita" id="visita">
+  <div class="wrap grid">
+    <div class="rv">
+      <span class="kicker">Ven a vernos</span>
+      <h2>Horario y cómo llegar</h2>
+      <div class="horario" id="horario"></div>
+      <div class="donde">
+        <b>¿Cómo nos encuentras?</b>
+        Estamos en la C. de la Fuente, 1, en los soportales de la Plaza de España, al lado del Ayuntamiento. Busca el toldo de «El rincón de Su».
+      </div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px">
+        <a class="btn btn-chile" href="tel:+34634719318">📞 634 71 93 18</a>
+        <a class="btn btn-ghost" target="_blank" rel="noopener" href="https://www.instagram.com/el_rincondesu/">Instagram</a>
+      </div>
+    </div>
+    <div class="mapa rv">
+      <iframe title="Mapa de El Rincón de Su" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=ElRinc%C3%B3nDeSu%2C%20C.%20de%20la%20Fuente%201%2C%20Miraflores%20de%20la%20Sierra&z=17&output=embed"></iframe>
+      <div class="over"><a class="btn btn-chile" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=ElRinc%C3%B3nDeSu&destination_place_id=ChIJ5YihvTxjQQ0Rs-Nq6hPUzMY">Cómo llegar →</a></div>
+    </div>
+  </div>
+</section>
+
+<footer class="pie">
+  <div class="wrap">
+    <a href="#inicio" class="logo"><svg viewBox="0 0 64 64" width="38" height="38" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#c4422b"/><path d="M14 36c0-10 8-18 18-18s18 8 18 18" fill="none" stroke="#f2b632" stroke-width="4" stroke-linecap="round"/><path d="M12 36h40c-2 9-10 14-20 14S14 45 12 36z" fill="#f7f0e3"/></svg><b>El Rincón de Su</b></a>
+    <div>C. de la Fuente, 1 · 28792 Miraflores de la Sierra (Madrid)<br><a href="tel:+34634719318">634 71 93 18</a> · <a href="https://www.instagram.com/el_rincondesu/" target="_blank" rel="noopener">@el_rincondesu</a></div>
+    <div class="lace">Web hecha por <a href="https://lacedev.com" target="_blank" rel="noopener">Lace</a></div>
+  </div>
+</footer>
+
+<!-- ================= BOLSA ================= -->
+<button class="bolsa-btn" id="bolsa-btn" aria-label="Ver pedido para llevar">🛍️ Tu pedido <b id="bolsa-n">0</b></button>
+<div class="velo" id="velo"></div>
+<aside class="bolsa" id="bolsa" aria-label="Pedido para llevar">
+  <header><h3>Para llevar</h3><button id="bolsa-x" aria-label="Cerrar">×</button></header>
+  <div class="items" id="bolsa-items"></div>
+  <div class="pie-bolsa">
+    <div class="tot"><span>Total</span><span id="bolsa-total">0 €</span></div>
+    <input id="b-nombre" placeholder="Tu nombre">
+    <input id="b-hora" placeholder="¿A qué hora pasas a recogerlo?">
+    <button class="btn btn-chile" id="bolsa-enviar">Enviar pedido por WhatsApp</button>
+  </div>
+</aside>
+
+<script>
+/* ================= DATOS ================= */
+const WA = "34634719318";
+const IMGS = {
+  4:"ANWiy9SNIQXkTOZRx3aXcLJghiL8cL7t714ot5NgKRdwD6WTU6MhkOXGOsRHhI3ztDmszqv4nKQCMLPOktN9bNzUA-wcoshoR-aQd9DAcJPvr7dMHnImdVG59iwcI7_u-9l6LpJ70ukx",
+  5:"ANWiy9Td5ZQhgwx_7d_CMnBDMOKro-YW8mOObfJKzVWvEcENlWxOaBR3uT2zZxINr1xB0JGB1Lnm-et6QDKE_bCdyBNzaQ_1QjMJjKTqdTsLOHTgCv-CHJxI93thsoT1PEMOFGDYTBQ",
+  6:"ANWiy9SFWstHJu7Uxspo3H-rnx661atcieFPJ77tJfisPIrtisknNwvBqEKVbumhKkUlYmrmXVSpVnyKf8F0CrMV7NxavBhIQFFd0yLdcLi8RKepcAVsgFcMPAqZjqOFKe1icZP04fOgJ1iL9VPQ",
+  14:"ANWiy9QnCq-flNLBgzMP2RwbsjwKjrh_kJa8b7a2qDFBG6jOGB7FINneuFkKNEPULvha7LyDbZPrk_TWDviZgRncFuZjgT2Shkap4cwLvMWY1UBHHZ_FKC_emmqApoPAiodxnufdYNNYod10i2Xb",
+  16:"ANWiy9Qp-ed5OUL7NXNspu3tHMc7i3Pl7ochHlMFFF25XL0DM0BPigtZJE4wLd3V8S-V0wX8CUWrcfzpDy_bx2B7RXj8hi6nHWiR9xuLKt0DwqjzVy8s6nHv-tXG3bKbTU8DITxKGC01",
+  17:"ANWiy9TMxPTxSQpIaRvgpe2NQVOBm_9hcQ5CUO9B9E1-lBSSHGaBQh95MkrmSL_o4MkQ2NlTqt-enaBdU3_dyNRJbd9WJ2WCRaqZCYzg2Hpq4Vn9lxjplQpLxaVtl71GlZYPSXVIxehC",
+  18:"ANWiy9TSWtaEpOOk_2x91O7j87KnwzGvrV7kyQaqU4wr069ct18MK5RkpkikD-YHM3_zQvk9T4YasMjBR2iTesa5V55Kz08gwj9XWigD-gGoC_dXxkV5GVznDmvhqXSAngbrrNHhf85P",
+  20:"ANWiy9SZzqh1Crtvgoyn9E4jf3gozmnC2kyEUzMLUXLBLe90zLPCNQ4WrLTii0ftNt9_VLdkYR3njbZzbvDOwy0pRhOkEjkYnBcwJN2bELiT9c-KwoF98m-bKwoqaqB-caEX3wB-HJjM",
+  21:"ANWiy9Res2Fv5TrkfKgK3VUiTtlsco8tqlUEi51xzGIAuPr15Jn0QXcG74jjN0_INyaiUpTis6p7lc3Pe1uts6AqFVaHDNqqWjjAPSacs8YJIKzEpKo5y0S948AR1noHxOlE1gBFNbsq",
+  26:"ANWiy9QEx0ql0m-cfLZY3th6l9fePjDnEhmIKy-YH1OSdr1oK-NqMIq-ND0QUXlMPdSBzdoQpRgYkExcq6ZZWewNWcQIN5rsWdtKw8mY6RNAgMKdIqZJfaVZEwBS-xIWwbi46XHsQpVCWQ",
+  27:"ANWiy9RwS8BFQv3H2OofXvGH8Y6WprQQ8PdiDB7UT07u8Y7QjwVOUaK50fNtNwAT5w7nJYHSbL1Wjd0Po6HhhJ0uUElXUjTLSW_jKxXDUnBzn5gyaD4fTYkxoVfmO-nsofpNdTTHEPG5OkXPuJE",
+  29:"ANWiy9St-MpguR8E6KvhFpD44qgM97EU9qqliPq5kvuUIq4g2X6lJh4X39OFreHk8ZUmH5l6nBInu3twgvDl4mI0ueIwvMvpjGtapAwwfWIpbLqbGLYHLPm24P3FCzmq5kfzYVhCHYOu",
+  30:"ANWiy9RW9yaSh97Ayoerc866sexX62qBvNbLVX7-vBkHA2h1Q4pOL_UIJfo6MXIL4kSlukz8dMqQJ1P6cC1u2OFKh58xDJp2hQk0K0ayZpq8oK2ZqYE5ufPDgQIxVx4FcE6rFrQl-Xf4",
+  31:"ANWiy9T9KkM4HwpEmqwb42MHrSPgRq0FT3I7fNF2pajgbB4NaJJBtec6_c5Tu8hbwxiR_mxGdJUmdtGksm7zyBnU_7cZ7cEnwTMgLybhSwzZAacQ9IfuCoeDQ5z8tDacopjJN0tH6RJ6",
+  32:"ANWiy9Q62qiEMEmtMOON4WIwVrpPhiul4mHcwC4ekf7apQ1zIdtYuYOQn9tz_quZ8GDp_x7DaZ6oyKadbzH7HFF66SViEJn27FphbdRzPWi_wjVtqpAtnYhJZdVxM2JX17I76CWRHiiXCAquK4E",
+  33:"ANWiy9SGimTKGlJJlkFYghTea-CHQ2LAq0_KBspdbZsM5FMKFNa3AKLY0OTMQ3U4SCMDUlk7ml67TD7kILVciXnK7Y6YnAU_goBz5OJYeiNyCi7YKUiPwDk5G_Jmx_B88efmdeHw6qCRMQ",
+  35:"ANWiy9T_l8roi_Ib5zZQCGs6zsyTrzabZQpDc9fuoNb2bgSsbhrS2UxtyFzK51wRxK1K1IJnAW63VHGUhxJCN1gcb8hrz1gUCSDYb7pssXBnv5SHDKJnp6cNDtnNsdCWCtmAqzJEIfN_KPUOQvw",
+  36:"ANWiy9RUdD4lmTREpZaxhQq-Yp0K5vx7pyrKn2ndErOHlGgaqPfuvHJ33PMht1wL6H-2s8a4JEpBiuU8BW2mFBJcuvDLhhkm7ajdyrFNkr0L2mD5A1BpPZXAfN9vDdQj9WyWw-f5u21AA92vyaui",
+  37:"ANWiy9RPltnhRrgzKiLVWUYm8GKtvkIddTxAbcQzaxkC9D5he_6ANBwAxhANv-5ktCrw37bdgYZmdgymWa7oxzK5eE9GzWlftQELfHSCBNUj5qn8HgGJGm_tnaXUGSgmHwv68YNZwKo5xZ7UASxo",
+  38:"ANWiy9SW5-HfcEk0uI2hMz0qmAJ9Foen7w0n5pqbeIqAPcs0W5XUt-7piS-QECUxb46mkIgjriwiqA8OJLDnhLoBLs3OwoqghutNuy0WT4GY4PkCt3H7a6a0__KXBWBo0h93IVVXCjweLKq_RbIW",
+  39:"ANWiy9SyO7WF7c98Yc906kMkS_mLSQCDZLoju55DqGnEuF1PuUSO_N9qk1D4bQ7DnlfQo-VZ3tNZJgZ1GNgm2xhfZJBqzyV0pQAW-iyZ4pUIfK9M4QM2ucWFXyEE61oW8vscKkPTlABZk43VZApY",
+  40:"ANWiy9QPKmws-5Cqaha2a7gpvsgx-4v8UX3aayxT70B9uk_Otk8FmgiEymVwgSjXkODG-ExUnhIizSayrT4rT8ngUJmbmYDorw5iUwQfpvf_x6JaoPKR_fx0-t8sSLOSegnxfacghg0",
+  41:"ANWiy9RfrMf6QOjIrvZS4vYc75tfPBtwr4DHac7LsIekbWdbOK4JUR_Ko2UymWTMPCfATGwRlzsgsOUp1induGRYYTAZSnlbpKeP9B-NDqPucMnt3J_jNfDecXJ1GglLaWrpoOcP2ahh2g",
+  44:"ANWiy9RP2_nvamymSpYtR84uMzRMQSYCoF-6XSAJrIZ5cmVPdJm2RycGF-DBAB9kkD3ciYermJX9FBx8LZdhMaaxQUa1ujuuN_-0t4NApUPgketmLyAXmZZ5MLID_LTMvjRDfF5ni-kMWh5-eTR9",
+  45:"ANWiy9TwZJrL-4tGqXkab7RMlDDCf_qpRBLSeKOA_gP-lQy3LF1OFUXjMAOga94nQzlqUBqAIdwolYE1_e5rqOAoF-chOVJvJ09-VnV_Fl5RqTHBBuhzgd1XvyA76Xt8qjPPzOvQH3MxfWza3JY",
+  46:"ANWiy9TQSt5AXQoGFbkjKcniVeJziIzbJpcGn6s7-tiWYhILtEqW2w0zoRF60kA0ce1Ugjbbfzt7RGAIiaVrvR2_zFbWmutJGw5WR8ZavEUGnpGeIL2iDDpaLEqN4eLM_Xdu3-_tWDHxqFPr5E6Y",
+  57:"ANWiy9TM_oBOhzrkdzvLKEIFj_l17TpMXshGcY9d6FxAt1FwaGn2970OCZ1zIGLiuoHgU7Qj-hyDt-mXMzwXEwXbiwt2IbiaiqEBRl1cUA7wnoOmXc_bQUTtuGbupr764xnTk6-f82MqvqeRyFj7",
+  59:"ANWiy9S2asgreMs8sx7Pnsg1p4YZMuKHlp0PX0IE-vHgUmlPBcxP-yIhQGycnqTOvyOiv3SoqG6dcOwCSwJ9YeL0lC_smIfWXl0tfr9fIheWxEUTukHPukFM4kx11RmtTM3rLZDPgXDp",
+  74:"ANWiy9RoemOsNmUauWMvlp9cXX4kLfp6B7PWGrhid_Y3oT56QM9H6FnlGp9ZkIcEk3EjKrlj2rbrTUStpuiPTOHoQtDGcVHrkjTZHsQKoPn3EbySfQsfmF8HU8z1IJLxaEEQUqNpqIY",
+  77:"ANWiy9QtETM7DAsf6OWlDCam-yld9e-M_KcFs1yoA2HV6hKTtGtv5gDdRBo09bxYbq5t-X6C-9h520gP84T8ZKE4FKl6barII_1-zirhnYPejkpW0u2JyZqUO8jygoQIiEaxau7GnuqsmAkAzfjN",
+  87:"ANWiy9R3wemxaUMjWXGdIUn9SaCqwjOgm39WmUb6xIfqH_FkQ_WRGFHh4pM-_67Gx3_98svXuekdRReNPQLhziIizepA5noV2FGawUVkrdGm2fbdthmGsuFOS04Qc65OD2jRcQQnPTF9BSxI70h1",
+  91:"ANWiy9SYoPtBawb3iwRaeONiXNYW70UpTNQ3jZ4ZkMN49b8iXcnua0dLYIoNrnbd8ZvlsezZiR7z1KA9UTxIJPIEbEn-0SXmgpLgt4gxczwMHCVE_K7NrjujAOaAROcKGsxe8zYH0Y4gHudDsPY"
+};
+const img = (k, w=1200, h=900) => `https://lh3.googleusercontent.com/gps-cs-s/${IMGS[k]}=w${w}-h${h}-k-no`;
+
+const CARTA = [
+  {cat:"Especialidades Su", emoji:"🌮", items:[
+    {n:"Tacos de Su", p:15, d:"Tres tacos con base de guacamole, tomate picado, queso, carne, cebolla morada encurtida, aceite de cilantro y mahonesa kimchee.", img:27, tag:"La firma de la casa"},
+    {n:"Tacos birria", p:15, d:"Tres tacos rellenos de carne mechada y queso mozzarella, con salsa de birria, ranchera, cebolla morada y cilantro.", img:17, tag:"Los que más gustan"},
+    {n:"Tacos flauta", p:15, d:"Tres tacos fritos rellenos de pollo sobre lechuga, con queso parmesano, salsa rosa y birria con pico de gallo.", img:37},
+    {n:"Nachos", p:17, d:"Totopos con carne de ternera picada y frijoles, pico de gallo, queso cheddar, guacamole y jalapeño.", img:26, tag:"Para compartir"},
+    {n:"Guacamole casero", p:18, d:"Aguacate, pico de gallo, salsa ranchera, cilantro, aceite, limón, sal y pimienta. Hecho en tu mesa.", img:35},
+    {n:"Quesadilla de pollo o carne", p:15, d:"Tortilla de harina rellena de queso, con carne o pollo.", img:39}
+  ]},
+  {cat:"Entrantes", emoji:"🧀", items:[
+    {n:"Puerro confitado", p:14, d:"A baja temperatura y marcado en plancha, sobre calabacín, con salsa de higos, semillas y germinados."},
+    {n:"Palitos de berenjena", p:14, d:"Berenjena rebozada en harina de maíz con miel de caña."},
+    {n:"Dados de queso brie", p:14, d:"Brie empanado en harina de maíz con mermelada de higo."},
+    {n:"Salteado de setas con foie", p:15, d:"Setas a la plancha con foie, lascas de parmesano y yema curada."},
+    {n:"Timbal de verduras con queso de cabra", p:16, d:"Verduras a la plancha con queso de cabra y nueces."},
+    {n:"Verduras al wok", p:14, d:"Variedad de verduras flameadas con salsa teriyaki."},
+    {n:"Crujientes de pollo", p:15, d:"Pechuga de pollo macerada y rebozada en panko.", img:32, tag:"Triunfan con los peques"},
+    {n:"Huevos rotos al gusto", p:15, d:"A elegir con pisto o con jamón ibérico."},
+    {n:"Tortilla de patatas", p:16, d:"Por encargo: pídela al reservar.", img:41},
+    {n:"Oreja a la plancha", p:14, d:"Bien tostadita, como tiene que ser."},
+    {n:"Croquetas", p:15, d:"Caseras, para picar."}
+  ]},
+  {cat:"Hamburguesas", emoji:"🍔", items:[
+    {n:"Hamburguesa Su", p:17, d:"Pan de cristal, doble de carne de 100 g, salsa de queso y jamón serrano.", img:6, tag:"La de la jefa"},
+    {n:"Hamburguesa Leo", p:18, d:"Pan de cristal, 100 g de carne, 100 g de costillar, queso y salsa barbacoa."},
+    {n:"Hamburguesa Edu Smash", p:18, d:"Pan de cristal, doble de carne de 100 g, queso cheddar y huevo.", img:46},
+    {n:"Hamburguesa Fer", p:15, d:"Pan de cristal, 100 g de carne, beicon, rulo de cabra, cebolla caramelizada y salsa casera de beicon."},
+    {n:"Hamburguesa Hannah", p:14, d:"Pan de cristal, pollo rebozado en cereales, lechuga, tomate, queso cheddar y salsa rosa casera."}
+  ]},
+  {cat:"Carnes y pescados", emoji:"🥩", items:[
+    {n:"Costillar a baja temperatura", p:22, d:"Con puré trufado y verduras gratinadas al horno. Se deshace en la boca.", img:57, tag:"Muy pedido"},
+    {n:"Entrecot con guarnición", p:25, d:"Carne de Casa Gutier, al punto que te guste.", img:21},
+    {n:"Bacalao confitado", p:21, d:"A baja temperatura, sobre puré trufado, napado en alioli de ajo negro gratinado con semillas y flores."},
+    {n:"Salmón curado con guarnición", p:20, d:""}
+  ]},
+  {cat:"De la huerta", emoji:"🥗", items:[
+    {n:"Ensalada de burrata ahumada", p:17, d:"Mézclum, tomate, burrata sobre pesto, frutos secos y cebolla morada encurtida.", img:33},
+    {n:"Ensalada de rulo", p:16, d:"Mézclum, tomate, rulo de cabra a la plancha, cebolla caramelizada, cebolla crujiente y coulis de frutos rojos."},
+    {n:"Ensalada de pollo", p:15, d:"Crujiente de pollo, de beicon y de jamón, con mézclum, tomate, cebolla y vinagreta de frutos secos."},
+    {n:"Ensalada de ventresca", p:16, d:"Mézclum, tomate de la huerta, cebolla roja y aliño."}
+  ]},
+  {cat:"Postres caseros", emoji:"🍰", items:[
+    {n:"Coulant de chocolate", p:6, d:"Con el corazón fundido.", img:74},
+    {n:"Tarta de pistacho", p:6, d:"Casera."},
+    {n:"Tarta de cookies", p:6, d:"Casera."},
+    {n:"Helado de bola", p:3, d:""}
+  ]}
+];
+const TODOS = CARTA.flatMap(c=>c.items.map(i=>({...i,cat:c.cat})));
+const byName = n => TODOS.find(i=>i.n===n);
+
+const RESENAS = [
+  {n:"Lorena J.", t:"Todo muy rico, los tacos buenísimos y el costillar espectacular. Da gusto encontrar sitios donde se come tan bien y te tratan así de bien. ¡Volveremos seguro!", c:"#c4422b"},
+  {n:"Silvia", t:"Estuvimos 17 personas y aun llegando muy justos de tiempo nos acogieron de mil amores. Los platos de Su, espectaculares. Muy buena relación calidad-precio y una atención de 10.", c:"#6b7a2c"},
+  {n:"Laura C.", t:"Sitio familiar con comida casera, sencilla pero muy coqueta. El bacalao y el costillar estaban súper ricos; el costillar se deshacía en la boca. El trato, muy cálido.", c:"#2f3a1f"},
+  {n:"Eva A.", t:"¡Nos ha encantado! Al llegar nos pusieron una sopa riquísima, y los tacos birria, espectaculares. Muy recomendable.", c:"#e0603f"},
+  {n:"Nacho H.", t:"En la terraza de la Plaza de España puedes disfrutar de un espectacular guacamole hecho en tu mesa. Raciones generosas y bien elaboradas, y la cocina funciona fenomenal.", c:"#8a9a3b"},
+  {n:"Daniel A.", t:"Nos ha gustado mucho la comida. ¡Vaya tacos! Te pringas, pero merece la pena. Rico, rico.", c:"#c4422b"},
+  {n:"Teresa M.", t:"Todo genial y bastante bien de precio. Fuimos dos veces el finde que estuvimos. ¡Repetimos los tacos! Recomendado.", c:"#6b7a2c"},
+  {n:"Fran B.", t:"Comida y atención espectacular. Pedimos dos hamburguesas y dos postres y estaba todo muy bueno. Volveré seguro.", c:"#2f3a1f"},
+  {n:"Marta V.", t:"Súper buena opción para comer en Miraflores. Llegamos a las 15:30 y la cocina seguía abierta. Genial servicio 🥰", c:"#e0603f"}
+];
+
+/* horario: [abre,cierra] en minutos; índice 0 = domingo */
+const HORARIO = {
+  0:[[570,1020]],
+  1:[[510,960]],
+  2:[[510,960]],
+  3:[[510,960],[1140,1440]],
+  4:[[510,960],[1140,1440]],
+  5:[[510,960],[1140,1440]],
+  6:[[570,960],[1140,1440]]
+};
+const DIAS = ["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"];
+const hhmm = m => m>=1440 ? "00:00" : `${String(Math.floor(m/60)).padStart(2,"0")}:${String(m%60).padStart(2,"0")}`;
+const eur = n => (Math.round(n*100)/100).toLocaleString("es-ES",{minimumFractionDigits:n%1?2:0, maximumFractionDigits:2})+" €";
+
+/* ================= IMÁGENES ================= */
+document.querySelectorAll("img[data-img]").forEach(el=>el.src=img(el.dataset.img,900,900));
+
+/* ================= HERO ================= */
+const HERO = [27,44,26,6,17,33];
+const slides = document.getElementById("slides"), dots = document.getElementById("dots");
+HERO.forEach((k,i)=>{
+  const im = new Image(); im.src = img(k,1800,1200); im.alt=""; im.referrerPolicy="no-referrer"; if(!i) im.className="on"; slides.appendChild(im);
+  const d = document.createElement("button"); d.setAttribute("aria-label","Foto "+(i+1)); if(!i) d.className="on"; d.onclick=()=>ir(i); dots.appendChild(d);
+});
+let si=0, st;
+function ir(i){ slides.children[si].classList.remove("on"); dots.children[si].classList.remove("on"); si=i; slides.children[si].classList.add("on"); dots.children[si].classList.add("on"); clearInterval(st); st=setInterval(()=>ir((si+1)%HERO.length),5500);}
+st=setInterval(()=>ir((si+1)%HERO.length),5500);
+
+/* ================= ESTADO ABIERTO ================= */
+function estado(){
+  const ahora = new Date(new Date().toLocaleString("en-US",{timeZone:"Europe/Madrid"}));
+  const d = ahora.getDay(), m = ahora.getHours()*60+ahora.getMinutes();
+  const el = document.getElementById("estado"), sp = el.querySelector("span");
+  const hoy = HORARIO[d], abierto = hoy.find(([a,c])=>m>=a&&m<c);
+  if(abierto){ el.classList.remove("cerrado"); const quedan=abierto[1]-m; sp.textContent = quedan<=60 ? `Abierto · cerramos en ${quedan} min` : `Abierto ahora · hasta las ${hhmm(abierto[1])}`; return; }
+  el.classList.add("cerrado");
+  const prox = hoy.find(([a])=>a>m);
+  if(prox){ sp.textContent = `Cerrado ahora · abrimos hoy a las ${hhmm(prox[0])}`; return; }
+  for(let k=1;k<=7;k++){ const dd=(d+k)%7; const t=HORARIO[dd]; if(t&&t.length){ sp.textContent=`Cerrado ahora · abrimos ${k===1?"mañana":"el "+DIAS[dd].toLowerCase()} a las ${hhmm(t[0][0])}`; return; } }
+}
+estado(); setInterval(estado,60000);
+
+/* horario tabla */
+(function(){
+  const hoy = new Date(new Date().toLocaleString("en-US",{timeZone:"Europe/Madrid"})).getDay();
+  document.getElementById("horario").innerHTML = [1,2,3,4,5,6,0].map(d=>`<div class="${d===hoy?"hoy":""}"><span>${DIAS[d]}</span><span>${HORARIO[d].map(([a,c])=>hhmm(a)+"–"+hhmm(c)).join(" · ")}</span></div>`).join("");
+})();
+
+/* ================= MARQUEE ================= */
+const frases = ["Tacos de Su","Guacamole en tu mesa","Hamburguesas con carne de Casa Gutier","Costillar a baja temperatura","Terraza en la plaza","Postres caseros","Desayunos desde las 8:30"];
+document.getElementById("mq").innerHTML = (frases.map(f=>`<span>${f}</span>`).join("")).repeat(2);
+
+/* ================= NAV ================= */
+const nav = document.getElementById("nav"), mnav=document.getElementById("mnav"), mbtn=mnav.querySelector("button");
+addEventListener("scroll",()=>nav.classList.toggle("solid",scrollY>60),{passive:true}); nav.classList.toggle("solid",scrollY>60);
+mbtn.onclick = e => { e.stopPropagation(); const o=mnav.classList.toggle("open"); mbtn.setAttribute("aria-expanded",o); };
+document.addEventListener("click",()=>mnav.classList.remove("open"));
+mnav.querySelectorAll(".drop a").forEach(a=>a.onclick=()=>mnav.classList.remove("open"));
+const secciones=[...document.querySelectorAll("header[id],section[id]")];
+const so = new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ const id=e.target.id; mnav.querySelectorAll(".drop a").forEach(a=>{ const on=a.getAttribute("href")==="#"+id; a.classList.toggle("on",on); if(on) document.getElementById("mnav-label").textContent = id==="inicio"?"Menú":a.firstChild.textContent.trim(); }); } }),{rootMargin:"-45% 0px -50% 0px"});
+secciones.forEach(s=>so.observe(s));
+
+/* ================= REVEAL ================= */
+const ro = new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add("in"); ro.unobserve(e.target);} }),{threshold:.12});
+document.querySelectorAll(".rv").forEach(el=>ro.observe(el));
+new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ const g=e.target; g.classList.add("visto"); g.querySelectorAll(".ingredientes span").forEach((s,i)=>s.style.transitionDelay=(i*.09)+"s"); } }),{threshold:.3}).observe(document.getElementById("guaca"));
+
+/* ================= BOLSA ================= */
+let bolsa = {};
+try{ bolsa = JSON.parse(localStorage.getItem("rds-bolsa")||"{}"); }catch(e){}
+const guardar=()=>{ try{ localStorage.setItem("rds-bolsa",JSON.stringify(bolsa)); }catch(e){} };
+function añadir(n,q=1){ if(!byName(n)) return; bolsa[n]=(bolsa[n]||0)+q; if(bolsa[n]<=0) delete bolsa[n]; guardar(); pintarBolsa(); const b=document.getElementById("bolsa-btn"); b.classList.remove("bump"); void b.offsetWidth; b.classList.add("bump"); }
+function pintarBolsa(){
+  const ks=Object.keys(bolsa), n=ks.reduce((s,k)=>s+bolsa[k],0), tot=ks.reduce((s,k)=>s+bolsa[k]*byName(k).p,0);
+  document.getElementById("bolsa-n").textContent=n;
+  document.getElementById("bolsa-btn").classList.toggle("on",n>0);
+  document.getElementById("bolsa-total").textContent=eur(tot);
+  document.getElementById("bolsa-items").innerHTML = ks.length ? ks.map(k=>`<div class="it"><div><b>${k}</b><br><small>${eur(byName(k).p)} / ud.</small></div><div class="q"><button data-q="${k}" data-d="-1" aria-label="Quitar uno">−</button><b>${bolsa[k]}</b><button data-q="${k}" data-d="1" aria-label="Añadir uno">+</button></div></div>`).join("") : `<p style="padding:30px 0;color:var(--gris);text-align:center">Aún no has añadido nada.<br>Pulsa <b>+ Pedir</b> en la carta.</p>`;
+  document.querySelectorAll(".plato .add").forEach(b=>{ const q=bolsa[b.dataset.n]; b.classList.toggle("in",!!q); b.innerHTML = q ? `✓ En el pedido (${q})` : "+ Pedir"; });
+}
+document.getElementById("bolsa-items").onclick=e=>{ const b=e.target.closest("[data-q]"); if(b) añadir(b.dataset.q,+b.dataset.d); };
+const abrirBolsa=o=>{ document.getElementById("bolsa").classList.toggle("on",o); document.getElementById("velo").classList.toggle("on",o); };
+document.getElementById("bolsa-btn").onclick=()=>abrirBolsa(true);
+document.getElementById("bolsa-x").onclick=()=>abrirBolsa(false);
+document.getElementById("velo").onclick=()=>abrirBolsa(false);
+document.getElementById("bolsa-enviar").onclick=()=>{
+  const ks=Object.keys(bolsa); if(!ks.length) return;
+  const tot=ks.reduce((s,k)=>s+bolsa[k]*byName(k).p,0);
+  const nom=document.getElementById("b-nombre").value.trim(), hora=document.getElementById("b-hora").value.trim();
+  const txt=`¡Hola! Quiero hacer un pedido para llevar 🛍️\n\n${ks.map(k=>`• ${bolsa[k]} x ${k}`).join("\n")}\n\nTotal aprox.: ${eur(tot)}${nom?`\nA nombre de: ${nom}`:""}${hora?`\nPaso a recogerlo: ${hora}`:""}\n\n(Pedido hecho desde la web)`;
+  open(`https://wa.me/${WA}?text=${encodeURIComponent(txt)}`,"_blank");
+};
+document.addEventListener("click",e=>{ const b=e.target.closest("[data-add]"); if(b) añadir(b.dataset.add); });
+
+/* ================= CARTA ================= */
+const tabsEl=document.getElementById("tabs"), platosEl=document.getElementById("platos"), buscar=document.getElementById("buscar");
+let catActiva="Especialidades Su";
+tabsEl.innerHTML = ["Todo",...CARTA.map(c=>c.cat)].map(c=>{ const e=c==="Todo"?"✨":CARTA.find(x=>x.cat===c).emoji; return `<button class="tab${c===catActiva?" on":""}" role="tab" data-c="${c}">${e} ${c}</button>`; }).join("");
+tabsEl.onclick=e=>{ const b=e.target.closest(".tab"); if(!b) return; catActiva=b.dataset.c; buscar.value=""; tabsEl.querySelectorAll(".tab").forEach(t=>t.classList.toggle("on",t===b)); pintarCarta(); };
+const norm=s=>s.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
+function pintarCarta(){
+  const q=norm(buscar.value.trim());
+  let lista = q ? TODOS.filter(i=>norm(i.n+" "+i.d+" "+i.cat).includes(q)) : (catActiva==="Todo"?TODOS:TODOS.filter(i=>i.cat===catActiva));
+  if(q) tabsEl.querySelectorAll(".tab").forEach(t=>t.classList.toggle("on",t.dataset.c==="Todo"));
+  platosEl.innerHTML = lista.length ? lista.map((i,k)=>`
+    <article class="plato${i.img?" foto":""}" style="animation-delay:${Math.min(k*.04,.4)}s">
+      ${i.img?`<div class="img">${i.tag?`<span class="tag">${i.tag}</span>`:""}<img src="${img(i.img,800,500)}" alt="${i.n}" loading="lazy" referrerpolicy="no-referrer"></div><div class="txt">`:(i.tag?`<span class="tag">${i.tag}</span>`:"")}
+      <div class="top"><h4>${i.n}</h4><span class="precio">${eur(i.p)}</span></div>
+      ${i.d?`<p>${i.d}</p>`:`<p></p>`}
+      <button class="add" data-n="${i.n}">+ Pedir</button>
+      ${i.img?"</div>":""}
+    </article>`).join("") : `<p class="vacio">No encontramos «${buscar.value}». Prueba con «tacos», «queso» o «hamburguesa».</p>`;
+  pintarBolsa();
+}
+platosEl.onclick=e=>{ const b=e.target.closest(".add"); if(b) añadir(b.dataset.n); };
+buscar.oninput=pintarCarta;
+pintarCarta();
+
+/* ================= ¿QUÉ ME PIDO? ================= */
+let mood="mexicano", pax=2, postre=1;
+const PLANES = {
+  mexicano:{t:"Fiesta mexicana", base:["Guacamole casero","Nachos"], porPax:["Tacos de Su","Tacos birria","Tacos flauta","Quesadilla de pollo o carne"]},
+  picoteo:{t:"Picoteo para compartir", base:["Croquetas","Oreja a la plancha"], porPax:["Dados de queso brie","Crujientes de pollo","Palitos de berenjena","Salteado de setas con foie","Huevos rotos al gusto"]},
+  burger:{t:"Noche de burger", base:["Nachos"], porPax:["Hamburguesa Su","Hamburguesa Edu Smash","Hamburguesa Leo","Hamburguesa Fer","Hamburguesa Hannah"]},
+  plato:{t:"Mesa contundente", base:["Croquetas","Ensalada de burrata ahumada"], porPax:["Costillar a baja temperatura","Entrecot con guarnición","Bacalao confitado","Salmón curado con guarnición"]},
+  verde:{t:"Ligero y fresco", base:["Verduras al wok"], porPax:["Ensalada de burrata ahumada","Ensalada de rulo","Timbal de verduras con queso de cabra","Ensalada de ventresca","Ensalada de pollo"]}
+};
+const POSTRES=["Coulant de chocolate","Tarta de pistacho","Tarta de cookies"];
+let propuesta={};
+function proponer(){
+  const plan=PLANES[mood]; propuesta={};
+  const nBase = pax<=2 ? 1 : pax<=5 ? plan.base.length : plan.base.length*2;
+  for(let i=0;i<nBase;i++){ const n=plan.base[i%plan.base.length]; propuesta[n]=(propuesta[n]||0)+1; }
+  for(let i=0;i<pax;i++){ const n=plan.porPax[i%plan.porPax.length]; propuesta[n]=(propuesta[n]||0)+1; }
+  if(postre){ const np=Math.max(1,Math.ceil(pax/2)); for(let i=0;i<np;i++){ const n=POSTRES[i%POSTRES.length]; propuesta[n]=(propuesta[n]||0)+1; } }
+  const ks=Object.keys(propuesta), tot=ks.reduce((s,k)=>s+propuesta[k]*byName(k).p,0);
+  document.getElementById("res-titulo").textContent=plan.t;
+  document.getElementById("res-lista").innerHTML = ks.map((k,i)=>{ const it=byName(k); return `<li style="animation-delay:${i*.07}s">${it.img?`<img src="${img(it.img,200,200)}" alt="" referrerpolicy="no-referrer">`:`<span class="ph">${CARTA.find(c=>c.cat===it.cat).emoji}</span>`}<div><b>${propuesta[k]} × ${k}</b><small>${it.d||it.cat}</small></div><em>${eur(it.p*propuesta[k])}</em></li>`; }).join("");
+  document.getElementById("res-total").innerHTML = `${eur(tot)}<small>aprox. ${eur(Math.round(tot/pax*10)/10)} por persona</small>`;
+}
+document.getElementById("moods").onclick=e=>{ const b=e.target.closest(".chip"); if(!b) return; mood=b.dataset.m; document.querySelectorAll("#moods .chip").forEach(c=>c.classList.toggle("on",c===b)); proponer(); };
+document.getElementById("postre").onclick=e=>{ const b=e.target.closest(".chip"); if(!b) return; postre=+b.dataset.p; document.querySelectorAll("#postre .chip").forEach(c=>c.classList.toggle("on",c===b)); proponer(); };
+document.getElementById("menos").onclick=()=>{ pax=Math.max(1,pax-1); document.getElementById("pax").textContent=pax; proponer(); };
+document.getElementById("mas").onclick=()=>{ pax=Math.min(12,pax+1); document.getElementById("pax").textContent=pax; proponer(); };
+document.getElementById("res-add").onclick=()=>{ Object.entries(propuesta).forEach(([k,q])=>añadir(k,q)); abrirBolsa(true); };
+proponer();
+
+/* ================= GALERÍA ================= */
+const GAL=[{k:27,c:"g"},{k:44,c:"w"},{k:26},{k:17},{k:33,c:"g"},{k:6},{k:57},{k:5,c:"w"},{k:35},{k:21},{k:87,c:"w"},{k:31},{k:14},{k:32},{k:20,c:"w"},{k:74},{k:41}];
+const mos=document.getElementById("mosaico");
+mos.innerHTML = GAL.map((g,i)=>`<button class="${g.c||""}" data-i="${i}" aria-label="Ampliar foto ${i+1}"><img src="${img(g.k,700,700)}" alt="" loading="lazy" referrerpolicy="no-referrer"></button>`).join("");
+const lb=document.getElementById("lb"), lbi=lb.querySelector("img"); let li=0;
+const verLb=i=>{ li=(i+GAL.length)%GAL.length; lbi.src=img(GAL[li].k,1800,1400); lb.classList.add("on"); };
+mos.onclick=e=>{ const b=e.target.closest("button"); if(b) verLb(+b.dataset.i); };
+lb.querySelector(".x").onclick=()=>lb.classList.remove("on");
+lb.querySelector(".prev").onclick=e=>{ e.stopPropagation(); verLb(li-1); };
+lb.querySelector(".next").onclick=e=>{ e.stopPropagation(); verLb(li+1); };
+lb.onclick=e=>{ if(e.target===lb) lb.classList.remove("on"); };
+addEventListener("keydown",e=>{ if(!lb.classList.contains("on")) return; if(e.key==="Escape") lb.classList.remove("on"); if(e.key==="ArrowLeft") verLb(li-1); if(e.key==="ArrowRight") verLb(li+1); });
+
+/* ================= RESEÑAS ================= */
+const car=document.getElementById("carrusel");
+car.innerHTML = RESENAS.map(r=>`<article class="res"><div class="stars">★★★★★</div><p>${r.t}</p><footer><span class="av" style="background:${r.c}">${r.n[0]}</span><div><b>${r.n}</b><small>Reseña de Google</small></div></footer></article>`).join("");
+const paso=()=>car.querySelector(".res").offsetWidth+18;
+document.getElementById("r-next").onclick=()=>car.scrollBy({left:paso(),behavior:"smooth"});
+document.getElementById("r-prev").onclick=()=>car.scrollBy({left:-paso(),behavior:"smooth"});
+let auto=setInterval(()=>{ if(car.scrollLeft+car.clientWidth>=car.scrollWidth-10) car.scrollTo({left:0,behavior:"smooth"}); else car.scrollBy({left:paso(),behavior:"smooth"}); },5000);
+car.addEventListener("pointerdown",()=>clearInterval(auto),{once:true});
+
+/* ================= RESERVA ================= */
+const fDia=document.getElementById("f-dia"), fHora=document.getElementById("f-hora"), aviso=document.getElementById("f-aviso");
+const hoyISO=new Date(new Date().toLocaleString("en-US",{timeZone:"Europe/Madrid"}));
+fDia.min = `${hoyISO.getFullYear()}-${String(hoyISO.getMonth()+1).padStart(2,"0")}-${String(hoyISO.getDate()).padStart(2,"0")}`;
+fDia.value = fDia.min;
+function horas(){
+  const d=new Date(fDia.value+"T12:00").getDay(), franjas=HORARIO[d]||[];
+  const opts=[]; franjas.forEach(([a,c])=>{ const ini = a<780 ? 780 : a; for(let m=ini; m<=c-60; m+=30) opts.push(m); });
+  fHora.innerHTML = opts.length ? opts.map(m=>`<option>${hhmm(m)}</option>`).join("") : `<option value="">Cerrado ese día</option>`;
+  aviso.textContent = franjas.length>1 ? "Ese día abrimos a mediodía y por la noche." : "Ese día solo abrimos a mediodía.";
+}
+fDia.onchange=horas; horas();
+document.getElementById("form-reserva").onsubmit=e=>{
+  e.preventDefault();
+  const f=new Date(fDia.value+"T12:00").toLocaleDateString("es-ES",{weekday:"long",day:"numeric",month:"long"});
+  const nota=document.getElementById("f-nota").value.trim();
+  const txt=`¡Hola! Me gustaría reservar mesa 🙌\n\n• Nombre: ${document.getElementById("f-nombre").value.trim()}\n• Día: ${f}\n• Hora: ${fHora.value}\n• Personas: ${document.getElementById("f-pax").value}\n• Zona: ${document.getElementById("f-zona").value}${nota?`\n• Nota: ${nota}`:""}\n\n(Reserva hecha desde la web)`;
+  open(`https://wa.me/${WA}?text=${encodeURIComponent(txt)}`,"_blank");
+};
+</script>
+</body>
+</html>
