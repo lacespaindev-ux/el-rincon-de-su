@@ -26,8 +26,8 @@
   --r:22px; --sombra:0 18px 40px -18px rgba(34,29,22,.45);
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:76px}
-body{font-family:"DM Sans",system-ui,sans-serif;color:var(--tinta);background:var(--papel);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+html{scroll-behavior:smooth;scroll-padding-top:76px;overflow-x:clip}
+body{font-family:"DM Sans",system-ui,sans-serif;color:var(--tinta);background:var(--papel);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:clip}
 img{display:block;max-width:100%}
 a{color:inherit}
 button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
@@ -106,7 +106,7 @@ section{padding:clamp(70px,10vw,130px) 0;position:relative}
 @media(max-width:700px){.dots{display:none}}
 
 /* ---------- MARQUEE ---------- */
-.marquee{background:var(--chile);color:#fff;overflow:hidden;padding:16px 0;transform:rotate(-1.2deg);margin:-14px -2vw 0;position:relative;z-index:4;box-shadow:0 10px 30px -15px rgba(0,0,0,.4)}
+.marquee{background:var(--chile);color:#fff;overflow:hidden;padding:16px 0;transform:rotate(-1.2deg) scale(1.04);margin:-14px 0 0;position:relative;z-index:4;box-shadow:0 10px 30px -15px rgba(0,0,0,.4)}
 .marquee .track{display:flex;gap:46px;width:max-content;animation:mq 30s linear infinite;font-family:"Fraunces";font-weight:700;font-size:1.35rem;text-transform:uppercase;letter-spacing:.02em}
 .marquee span{display:flex;align-items:center;gap:46px}
 .marquee span:after{content:"✺";color:var(--maiz)}
